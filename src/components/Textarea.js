@@ -203,7 +203,7 @@ export default function Textarea(props) {
           <button
             type="button"
             onClick={handleLoClick}
-            className={`btn btn-${mode} my-2 mx-3 ${props.visibility}`}
+            className={`btn btn-${mode} my-2 mx-2 ${props.visibility}`}
           >
             toLowerCase
           </button>
@@ -217,7 +217,7 @@ export default function Textarea(props) {
           <button
             type="button"
             onClick={handleSelectClick}
-            className={`btn btn-${mode} my-2 mx-3 ${props.visibility}`}
+            className={`btn btn-${mode} my-2 mx-2 ${props.visibility}`}
           >
             copyText
           </button>
@@ -231,7 +231,7 @@ export default function Textarea(props) {
           <button
             type="button"
             onClick={reset}
-            className={`btn btn-${mode} my-2 mx-3 ${props.TThide}`}
+            className={`btn btn-${mode} my-2 mx-2 ${props.TThide}`}
           >
             Reset
         </button>
@@ -243,7 +243,7 @@ export default function Textarea(props) {
             {mode}Mode
           </button>
           <div className="customBtn">
-            <button type="button" className={`btn btn-${mode} my-2 mx-3`}>
+            <button type="button" className={`btn btn-${mode} my-2 mx-2`}>
               Themes
             </button>
             <ul className="customUl">
@@ -256,6 +256,7 @@ export default function Textarea(props) {
             </ul>
           </div>
         </div>
+        <br></br><br></br>
           <h5 class={`${props.visibility}`}style={{ color: `${textColor}` }}>Text Preview</h5>
           <p class={`${props.visibility}`}style={{ color: `${textColor}` }}>
             Word Count: {text.split(/\s+/).filter((element)=>{return element.length !== 0}).length} Character Count: {Count(text)}
